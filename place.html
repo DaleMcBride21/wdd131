@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+    <title>New Zealand</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <!-- Link to external JavaScript file -->
+    <script src="scripts/places.js" defer></script>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <!-- Header content goes here -->
+        <h1>New Zealand</h1>
+    </header>
+    <main>
+        <!-- Main content goes here -->
+        <div class="picture">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/new-zealand-red-stag-hunt-large.webp">
+                <source media="(min-width: 500px)" srcset="images/new-zealand-red-stag-hunt-medium.webp">
+                <img src="images/new-zealand-red-stag-hunt-small.webp" alt="new Zealand" width="500" height="250">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><b>Area:</b> 268,021 square kilometers</li>
+                <li><b>Capital:</b> Wellington</li>
+                <li><b>Languages:</b> English, Māori</li>
+                <li><b>Currency:</b> New Zealand Dollar (NZD)</li>
+                <li><b>Timing Zone:</b> New Zealand Standard Time, New Zealand Daylight Time</li>
+                <li><b>Calling Code:</b> +64</li>
+                <li><b>Internet TLD:</b> .nz</li>
+                <li><b>Population:</b> Approximately 5 million</li>
+            </ul>
+        </div>
+        <div class="weather">
+            <div>
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="weather-icon">
+            </div>
+            <ul>
+                <li><b>Temperature: </b>10 C</li>
+                <li><b>Conditions: </b>Sunny</li>
+                <li><b>Wind: </b>4.8 kph</li>
+                <li><b>Wind Chill: </b><span id="windChill"></span></li>
+            </ul>
+        </div>       
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Dale McBride - Wyoming
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

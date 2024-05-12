@@ -26,7 +26,7 @@ const today = new Date();
 
 currentyear.innerHTML = `<span>${today.getFullYear()}</span>`;
 
-
+// this is the code for the footer of each assignment
 // code below if for latest modification
 
 let oLastModif = new Date(document.lastModified);

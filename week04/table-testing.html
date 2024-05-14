@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>School timetable</title>
+    <style>
+    html {
+      font-family: sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      border: 2px solid rgb(200,200,200);
+      letter-spacing: 1px;
+      font-size: 0.8rem;
+    }
+
+    td, th {
+      border: 1px solid rgb(190,190,190);
+      padding: 10px 20px;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    .column-header {
+        background-color: #2f2f22;
+        color: white;
+    }
+
+    .black-box {
+        background-color: black;
+    }
+
+    tr:nth-child(odd) {
+        background-color: lightgrey;
+    }
+
+
+    h1 {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        max-width: 400px;
+        margin: 0;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>ACME Wildwest Services</h1>
+
+    <table>
+      <colgroup>
+        
+      </colgroup>
+      <tr>
+        <td class="black-box">&nbsp;</td>
+        <th class="column-header">Basic</th>
+        <th class="column-header">Premium</th>
+        <th class="column-header">Deluxe</th>
+      </tr>
+      <tr>
+        <th>Feature 1</th>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>✔️</td>
+        
+      </tr>
+      <tr>
+        <th>Feature 2</th>
+        <td>❌</td>
+        <td>✔️</td>
+        <td>✔️</td>
+      </tr>
+      <tr>
+        <th>Feature 3</th>
+        <td>❌</td>
+        <td>❌</td>
+        <td>✔️</td>
+      </tr>
+    </table>
+
+
+  </body>
+</html>

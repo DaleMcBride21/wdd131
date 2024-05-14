@@ -1,0 +1,25 @@
+header {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+main img {
+    padding: 25px;
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

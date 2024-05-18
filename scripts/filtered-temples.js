@@ -175,9 +175,8 @@ navMenu.addEventListener("click", function(event) {
     }
 });
 
-const year = document.querySelector("#year");
-const today = new Date();
-year.innerHTML = `<span>${today.getFullYear()}</span>`;
+// this is the code for the footer of each assignment
+// code below if for latest modification
 
 let oLastModif = new Date(document.lastModified);
 let lastModified = document.getElementById("lastModified");

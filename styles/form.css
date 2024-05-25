@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+body {
+    background-color: #161925;
+    margin: 0;
+    font-family: 'Reddit Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    background-color: #47682C;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.form {
+    background-color: lightgrey;
+    padding: 1rem;
+    border-radius: .5rem;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form {
+    padding: .5rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form fieldset {
+    border: none;
+    width: 100%;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.star-rating .fontSize {
+    align-self: flex-start; 
+}
+
+.displayBlock {
+    display: block;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.star-rating .gridColumn {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.4rem;
+}
+
+.star-rating .gridColumn div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.displayBlock, legend, .fontSize, textarea {
+    font-family: 'Reddit Mono', monospace;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#productName, #dateOfInstall, #yourName, #userReview {
+    width: 100%;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+#proposeCourse {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: #47682C;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #47682C;
+    padding: 25px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .gridColumn {
+        gap: 0.25rem;
+    }
+
+    .centerStars label {
+        font-size: 0.75rem;
+    }
+
+    .fontSize {
+        font-size: 1.25rem;
+    }
+
+    legend, .displayBlock {
+        font-size: 1rem;
+    }
+
+    #productName, #dateOfInstall, #yourName, #userReview, #proposeCourse {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    #proposeCourse {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gridColumn {
+        gap: 0.1rem;
+    }
+
+    .centerStars label {
+        font-size: 0.6rem;
+    }
+
+    .fontSize {
+        font-size: 1rem;
+    }
+
+    legend, .displayBlock {
+        font-size: 0.875rem;
+    }
+
+    #productName, #dateOfInstall, #yourName, #userReview, #proposeCourse {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    #proposeCourse {
+        font-size: 0.875rem;
+    }
+}

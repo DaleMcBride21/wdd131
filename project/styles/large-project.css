@@ -1,0 +1,46 @@
+@media screen and (min-width: 1200px) {
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* laptop div */
+    #laptopTitle {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #laptop {
+        display: flex;
+        border: solid gray 5px;
+        grid-column: 1/2;
+        max-width: 550px;
+        overflow: auto;
+        margin-left: 2rem;
+    }
+    
+    
+    /* computer parts div */
+    #computerParts {
+        display: flex;
+        border: solid gray 5px;
+        grid-column: 2/4;
+        overflow: auto;
+        margin-right: 2rem;
+    }
+    
+    /* mobile div */
+    #mobile {
+        display: flex;
+        border: solid gray 5px;
+        grid-column: 1/4;
+        overflow: auto;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    
+    #laptop, #computerParts, #mobile {
+        margin-top: 2rem;
+    }
+}

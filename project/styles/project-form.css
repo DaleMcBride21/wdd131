@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Common styles for all screen sizes */
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat as the default font for the body */
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif; /* Apply Lato for headings */
+}
+
+p {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat for paragraphs */
+}
+
+/* header styling */
+
+header {
+    background-color: #87CEEB;
+    padding: .25rem;
+    border-radius: .5rem;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+header div img {
+    max-width: 100px;
+    margin: .5rem;
+    border-radius: .5rem;
+}
+
+header div nav {
+    margin-right: .5rem;
+}
+
+header div nav ul {
+    margin-top: 3rem;
+}
+
+header div nav ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 1.5rem;
+}
+
+header div nav ul li a:hover {
+    background-color: lightgray;
+}
+
+header div nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border: solid black 2px;
+    padding: .75rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.form {
+    background-color: lightgrey;
+    padding: 1rem;
+    border-radius: .5rem;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form {
+    padding: .5rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form fieldset {
+    border: none;
+    width: 100%;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.star-rating .fontSize {
+    align-self: flex-start; 
+}
+
+.displayBlock {
+    display: block;
+}
+
+#firstName, #lastName, #userReview {
+    display: block;
+    padding: .5rem;
+    width: 96%;
+}
+
+.displayBlock {
+    text-align: left;
+}
+
+#proposeCourse {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: #47682C;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #87CEEB;
+    border-radius: .5rem;
+}
+
+footer div p a {
+    text-decoration: none;
+    color: black;
+}
+
+footer div p a:hover {
+    text-decoration: underline;
+    color: black;
+}
